@@ -4,40 +4,91 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <html>
+    <head>
     <style>
-        .dica {
-            color: #F86D6E
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
-        p {
-            margin: 30px
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #27282c;
         }
-        .link a{
-            color: black;
+        a {
+            position: relative;
+            background: #fff;
+            color: #fff;
             text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding: 10px 30px;
+            transition: 0.5s;
         }
-        
-        .link a:hover {
-            color: red;
+        a:hover {
+            background: var(--clr);
+            color: var(--clr);
+            letter-spacing: 0.25em;
+            box-shadow: 0 0 35px var(--clr);
+        }
+        a:before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: #27282c;
+        }
+        a span {
+            position: relative;
+            z-index: 1;
+        }
+        a i {
+            position: absolute;
+            inset: 0;
+            display: block;
+        }
+        a i::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 80%;
+            width: 10px;
+            height: 4px;
+            background: #27282c;
+            transform: translateX(-50%) skewX(325deg);
+            transition: 0.5s;
+        }
+        a:hover i::before {
+            width: 20px;
+            left: 20%
+        }
+        a i::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            width: 10px;
+            height: 4px;
+            background: #27282c;
+            transform: translateX(-50%) skewX(325deg);
+            transition: 0.5s;
+        }
+        a:hover i::after {
+            width: 20px;
+            left: 80%
         }
     </style>
-    <head>
         <title>Pagina inicial para a emy</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>
-            <p class="link">
-                Oi amor, eu fiz essa <a href="pagina2.html">página</a> para você! <3
-            </p>
-            <p>
-                Em ordem de entrar na proxima página preciso que você adivinhe onde está a proxima página <br/>
-            </p>
-            <p>
-            <p class="dica">
-               PS: Está no texto! 
-            </p>
-        </div>
-
+        <a href="pag1.html" style='--clr:#1e9bff'><span>Começar</span><i></i></a> 
+        
     </body>
 </html>
