@@ -5,6 +5,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            color: #27282c;
+        }
         .linhas {
             color: lightcoral;
         }
@@ -21,10 +25,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         .cnh {
             text-decoration: none;
             color: inherit;
+            transition: 0.5s;
         }
         .cnh:hover {
             color: #F68586;
             transition: 0.5s;
+        }
+        #quadrado {
+            width: 780px;
+            height: 1160px;
+            background-color: #F3D78F;
+            border-radius: 25px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 25px;
+        }
+        body {
+            background: #27282c;
         }
     </style>
     <head>
@@ -33,6 +53,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div id='quadrado'>
         <h1>Eu sabia que você ia conseguir!</h1>
         <h2>Eu sempre soube que você era capaz!</h2>
         <div>A proposito, eu sei que você não perguntou, mas a ultima pagina teve <span class="linhas">182 linhas de código</span>!</div>
@@ -45,5 +66,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <a href="pag4.html">
         <img src="casi.png" class="img2" alt="casi" />
         </a>
+        </div>
     </body>
 </html>
